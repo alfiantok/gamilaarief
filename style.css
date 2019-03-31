@@ -1,0 +1,349 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+nav .nav .nav-item a{
+  color: #fff;
+}
+body{
+  font-family: century gothic !important;
+}
+h1{
+  font-weight: bold;
+}
+header{
+  background: url(img/bg-1.jpg);
+  background-size: cover;
+  background-position: right right;
+  height: 630px;
+  position: relative;
+}
+.pa-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform:translate(-50%,-50%);
+}
+.pa{
+  position: absolute;
+}
+.tf{
+  -webkit-transform:translate(-50%,-50%);
+}
+.cblack{
+  color: #565656;
+}
+
+/*Custom button*/
+.my-button .btn{
+  font-size: 11pt;
+  border-radius: 100px;
+  font-weight: bold;
+  padding: 10px;
+  width: 180px;
+}
+
+/*Color */
+.color-purple{
+  color: #945BA3;
+}
+
+
+
+/*---------------other----------------*/
+
+.bg-grey{
+  background: #F9F9F9;
+}
+/*custom button*/
+.button-header{
+  margin-top: 30px;
+}
+.main-button .btn{
+  background: #945BA3;
+  color: #fff;
+  transition: all 0.3s;
+}
+.main-button .btn:hover{
+  background: #7F3791;
+  transition: all 0.3s;
+}
+
+
+.short-title-header{
+  color: #fff;
+  margin-top: 170px;
+  margin-left: 40px;
+}
+.short-title-header p{
+  line-height: 2;
+  width: 330px;
+  font-size: 10pt;
+}
+.short-title-header h1{
+  font-size: 40pt;
+}
+
+/*play button*/
+.playbutton a img{
+  width: 300px;
+}
+
+
+/*note buy*/
+.note-buy{
+  bottom: 30px;
+  left: 30px;
+  padding: 15px;
+  border:1px solid #fff;
+  color: #fff;
+}
+.note-buy a{
+  color: #fff;
+}
+
+/*medsos header*/
+.medsos{
+  right: 50px;
+  bottom: 20px;
+}
+.medsos a{
+  color: #fff;
+  font-size: 17pt;
+  margin: 15px;
+}
+.mynavbar a{
+  transition: all 0.3s;
+  width: 90px;
+  text-align: center;
+}
+.mynavbar a:hover{
+  color: #945BA3 !important;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 100px;
+}
+.background-navbar-scroll{
+  background: #A338C7;
+  transition: all 0.3s;
+}
+
+
+/*Navbar menu*/
+#active{
+  background: #fff;
+  color: #AC81B8;
+  border-radius: 100px;
+}
+#active2{
+  background: #AC81B8;
+  color: #fff !important;
+}
+.dropdown-menu{
+  margin-left: -70px;
+}
+.dropdown-menu a{
+  color: #333 !important;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.dropdown{
+  display: none !important;
+}
+.dropdown-menu a:hover{
+  background: #8F2288 !important;
+  color: #fff !important;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+}
+.navdropdown-item a{
+   padding: 15px;
+  display: block;
+   color: #fff;
+   border-bottom:1px solid #fff;
+  width: 100%;
+}
+
+
+/*Gallery*/
+.image-quote img{
+  float: left;
+  width: 25%;
+  height: 25%;
+  transition: all 0.3s;
+  -webkit-filter:grayscale(100%);
+}
+.image-quote img:hover{
+  -webkit-filter:grayscale(0%);
+  transition: all 0.5s;
+}
+/*box*/
+.card-image-size img{
+  width: 100%;
+  box-shadow: 0px 10px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 15px 20px -20px rgba(0,0,0,0.5);
+  transition: all 0.3s;
+}
+.card-image-size-2 img{
+  width: 300px;
+}
+.card-image-size-3 img{
+  width: 100%;
+}
+.card-image-size a:hover img{
+  box-shadow: 0px 35px 20px -20px rgba(0,0,0,0.5);
+  transition: all 0.3s;
+}
+.card-image-size a{
+  color: #565656;
+}
+.card-image-size p{
+  margin-top: -10px;
+}
+.card-image-size h6{
+  margin-top: 10px;
+}
+.box-square{
+  display: inline-block;
+}
+.box-square:last-child{
+  margin-right: 0px;
+}
+
+
+/*Video section*/
+.video-section{
+  background: url(img/bg-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  color: #fff;
+}
+.video-section *{
+  color: #fff;
+}
+
+
+
+/*footer*/
+footer .bg-dark .row{
+  color: #888;
+  padding: 10px;
+  font-size: 10pt;
+}
+.color-white{
+  color: #fff;
+}
+.color-white a{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+
+@media(max-width: 944px){
+  /*play button*/
+  .playbutton a img{
+    display: none;
+  }
+}
+@media(max-width: 550px){
+  .note-buy{
+    bottom: 80px;
+  }
+  .short-title-header p{
+    width: 200px;
+  }
+  .short-title-header h1{
+    font-size: 30pt;
+  }
+  .my-button .btn{
+    padding: 8px;
+    width: 130px;
+  }
+  h3{
+    font-size: 13pt;
+  }
+  .cblack p{
+    font-size: 8pt;
+  }
+  footer .text-center-res .float-right{
+    float: none !important;
+  }
+  footer .text-center-res{
+    text-align: center;
+  }
+  .box-square{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .res-five{
+    width: 50% !important;
+  }
+  .image-quote img{
+    width: 50%;
+  }
+  .video-section{
+    background-attachment: scroll;
+  }
+  .the-box-about h1{
+    font-size: 23pt;
+  }
+  .the-box-about{
+    padding: 30px !important;
+  }
+  .pn{
+    padding: 30px !important;
+  }
+  .medsos-about .float-right{
+    float: none !important;
+  }
+  .medsos-about{
+    text-align: center !important;
+    margin: 0 auto;
+  }
+}
+@media(max-width: 768px){
+  .nav-res{
+    display: none;
+  }
+  .dropdown{
+    display: block !important;;
+  }
+  .dropdown-menu{
+    right: 30%;
+  }
+  .nav-brand img{
+    width: 100px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+/*Lyric*/
+.header-lyric{
+  height: 330px;
+}
+.short-title-header-2{
+  margin-top: 130px;
+}
+.lyric-box .res-five{
+  margin-top: 40px;
+}
+.about-box .the-box-about{
+  height: 400px;
+  border:1px solid #eaeaea;
+  color: #777;
+}
+.about-box .the-box-about:nth-child(1){
+  background: url(img/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.color-grey a{
+  color: #555;
+}
