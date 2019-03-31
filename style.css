@@ -341,8 +341,9 @@ footer .bg-dark .row{
 }
 .about-box .the-box-about:nth-child(1){
   background: url(img/bg-2.jpg);
-  background-size: cover;
+  background-size: cover !important;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .color-grey a{
   color: #555;
