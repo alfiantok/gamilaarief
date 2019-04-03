@@ -9,11 +9,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<!-- jQuery library -->
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Popper JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script>
 
@@ -21,14 +21,13 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery.lightbox.css">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 
 
-	<script src="js/jquery.magnific-popup.js"></script>
-	<link rel="stylesheet" href="magnific-popup.css">
-	<script type="text/javascript" src="js/demo.js"></script>
+
 </head>
 <body>
 	<header class="border col-sm-12">
@@ -262,29 +261,18 @@
 				</div>
 			</div>
 		</div>
-		<div class="image-quote" id="quotes">
-
-
-
-
-
-
-
-
+		<div class="image-quote gallery" id="quotes">
+			<a href="img/quote1.jpg"><img src="img/quote1.jpg"></a>
+			<a href="img/quote2.jpg"><img src="img/quote2.jpg"></a>
+			<a href="img/quote3.jpg"><img src="img/quote3.jpg"></a>
+			<a href="img/quote4.jpg"><img src="img/quote4.jpg"></a>
+			<a href="img/quote5.jpg"><img src="img/quote5.jpg"></a>
+			<a href="img/quote6.jpg"><img src="img/quote6.jpg"></a>
+			<a href="img/quote7.jpg"><img src="img/quote7.jpg"></a>
+			<a href="img/quote8.jpg"><img src="img/quote8.jpg"></a>
 		</div>
-		<div id="swarupGallery">
-		  <ul>
-		    <li><a href="img/quote1.jpg"><img src="img/quote1.jpg" width="190" height="190" alt="image 01" /></a></li>
-		    <li><a href="img/quote2.jpg"><img src="img/quote2.jpg" width="190" height="190" alt="image 02" /></a></li>
-		    <li><a href="img/quote3.jpg"><img src="img/quote3.jpg" width="190" height="190" alt="image 03" /></a></li>
-		    <li><a href="img/quote4.jpg"><img src="img/quote4.jpg" width="190" height="190" alt="image 04" /></a></li>
-		    <li><a href="img/quote5.jpg"><img src="img/quote5.jpg" width="190" height="190" alt="image 05" /></a></li>
-		    <li><a href="img/quote6.jpg"><img src="img/quote6.jpg" width="190" height="190" alt="image 06" /></a></li>
-		    <li><a href="img/quote7.jpg"><img src="img/quote7.jpg" width="190" height="190" alt="image 07" /></a></li>
-		    <li><a href="img/quote8.jpg"><img src="img/quote8.jpg" width="190" height="190" alt="image 08" /></a></li>
-		  </ul>
-		  <div id="navHolder"></div>
-		</div>
+
+
 		<div class="clearfix"></div>
 
 		<div class="container-fluid video-section">
@@ -341,7 +329,7 @@
 	</footer>
 
 
-
+	<script src="js/jquery.lightbox.js"></script>
 	<script type="text/javascript">
 		window.onscroll = function() {myFunction()};
 
@@ -384,20 +372,12 @@
 		  	$('.quotes a').removeAttr('id');
 		  }
 		}
+		 // Initiate Lightbox
+		  $(function() {
+		    $('.gallery a').lightbox(); 
+		  });
 		
 
-	</script>
-	<script language="javascript">
-	$(document).ready(function() {
-		//alert('d');
-		$('#swarupGallery').mycaptcha({
-			width: '100',
-			navHolder: '#navHolder',
-			coloum: 0,
-			gutterSpace: 0,
-		});
-		//$(".group2").colorbox({rel:'group2', transition:"fade"});
-	});
 	</script>
 
 </body>
