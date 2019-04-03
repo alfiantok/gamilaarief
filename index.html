@@ -6,13 +6,14 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 	<!-- Popper JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script>
 
@@ -22,6 +23,12 @@
 	<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+	<script src="js/jquery.magnific-popup.js"></script>
+	<link rel="stylesheet" href="magnific-popup.css">
+	<script type="text/javascript" src="js/demo.js"></script>
 </head>
 <body>
 	<header class="border col-sm-12">
@@ -32,6 +39,9 @@
 			<ul class="nav navbar-right navbar-inline mynavbar">
 				<li class="nav-item nav-res">
 					<a href="index.html" class="nav-link"  id="active"><b>Home</b></a>
+				</li>
+				<li class="nav-item nav-res">
+					<a href="about.html" class="nav-link"><b>About</b></a>
 				</li>
 				<li class="nav-item nav-res">
 					<a href="lyric.html" class="nav-link"><b>Lyrics</b></a>
@@ -48,9 +58,6 @@
 				<li class="nav-item nav-res video">
 					<a href="index.html#video" class="nav-link"><b>Video</b></a>
 				</li>
-				<li class="nav-item nav-res">
-					<a href="about.html" class="nav-link"><b>About</b></a>
-				</li>
 
 				<li class="nav-item dropdown">
 			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -58,12 +65,13 @@
 			      </a>
 			      <div class="dropdown-menu">
 			        <a class="dropdown-item" href="index.html" id="active2">Home</a>
+			        <a class="dropdown-item" href="about.html">About</a>
 			         <a class="dropdown-item" href="lyric.html">Lyrics</a>
 			        <a class="dropdown-item album" href="index.html#album">Album</a>
 			        <a class="dropdown-item event" href="index.html#event">Event</a>
 			        <a class="dropdown-item quotes" href="index.html#quotes">Quotes</a>
 			        <a class="dropdown-item video" href="index.html#video">Video</a>
-			         <a class="dropdown-item" href="about.html">About</a>
+			         
 			      </div>
 			    </li>
 			</ul>
@@ -255,14 +263,27 @@
 			</div>
 		</div>
 		<div class="image-quote" id="quotes">
-			<a href="img/quote1.jpg"><img src="img/quote1.jpg"></a>
-			<a href="img/quote2.jpg"><img src="img/quote2.jpg"></a>
-			<a href="img/quote3.jpg"><img src="img/quote3.jpg"></a>
-			<a href="img/quote4.jpg"><img src="img/quote4.jpg"></a>
-			<a href="img/quote5.jpg"><img src="img/quote5.jpg"></a>
-			<a href="img/quote6.jpg"><img src="img/quote6.jpg"></a>
-			<a href="img/quote7.jpg"><img src="img/quote7.jpg"></a>
-			<a href="img/quote8.jpg"><img src="img/quote8.jpg"></a>
+
+
+
+
+
+
+
+
+		</div>
+		<div id="swarupGallery">
+		  <ul>
+		    <li><a href="img/quote1.jpg"><img src="img/quote1.jpg" width="190" height="190" alt="image 01" /></a></li>
+		    <li><a href="img/quote2.jpg"><img src="img/quote2.jpg" width="190" height="190" alt="image 02" /></a></li>
+		    <li><a href="img/quote3.jpg"><img src="img/quote3.jpg" width="190" height="190" alt="image 03" /></a></li>
+		    <li><a href="img/quote4.jpg"><img src="img/quote4.jpg" width="190" height="190" alt="image 04" /></a></li>
+		    <li><a href="img/quote5.jpg"><img src="img/quote5.jpg" width="190" height="190" alt="image 05" /></a></li>
+		    <li><a href="img/quote6.jpg"><img src="img/quote6.jpg" width="190" height="190" alt="image 06" /></a></li>
+		    <li><a href="img/quote7.jpg"><img src="img/quote7.jpg" width="190" height="190" alt="image 07" /></a></li>
+		    <li><a href="img/quote8.jpg"><img src="img/quote8.jpg" width="190" height="190" alt="image 08" /></a></li>
+		  </ul>
+		  <div id="navHolder"></div>
 		</div>
 		<div class="clearfix"></div>
 
@@ -283,22 +304,13 @@
 						
 						<div class="row">
 							<div class="box-square card-image-size card-image-size-3 col-sm-4">
-								<a href="https://www.youtube.com/watch?v=t0N5Xj3_-EA" target="_blank">
-									<img src="img/video1.jpg">
-									<h6><b>GAMILA ARIEF-MASIH HUJAN <br>(MUSIC VIDEO)</b></h6>
-								</a>
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/t0N5Xj3_-EA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="box-square card-image-size card-image-size-3 col-sm-4">
-								<a href="https://www.youtube.com/watch?v=Pmkh_POIqPs" target="_blank">
-									<img src="img/video2.jpg">
-									<h6><b>Gamila - Indonesian Girl <br>[Official Video]</b></h6>
-								</a>
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/Pmkh_POIqPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="box-square card-image-size card-image-size-3 col-sm-4">
-								<a href="https://www.youtube.com/watch?v=XuDUXiCDimw" target="_blank">
-									<img src="img/video3.jpg">
-									<h6><b>Kembali Ke Masa Lalu <br>feat Ichsan Akbar</b></h6>
-								</a>
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/XuDUXiCDimw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 						</div>
 							
@@ -374,6 +386,18 @@
 		}
 		
 
+	</script>
+	<script language="javascript">
+	$(document).ready(function() {
+		//alert('d');
+		$('#swarupGallery').mycaptcha({
+			width: '100',
+			navHolder: '#navHolder',
+			coloum: 0,
+			gutterSpace: 0,
+		});
+		//$(".group2").colorbox({rel:'group2', transition:"fade"});
+	});
 	</script>
 
 </body>
